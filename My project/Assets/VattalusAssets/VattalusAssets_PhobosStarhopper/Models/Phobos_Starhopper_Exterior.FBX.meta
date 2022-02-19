@@ -1,0 +1,166 @@
+fileFormatVersion: 2
+guid: 7b24ec5616e22b04fbe2590dd29b3070
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ext_AddedAO
+    100002: ExtBody
+    100004: ExtDecal_Opaque
+    100006: ExtDecal_Transp
+    100008: ExtEngineGlow
+    100010: FloorLight1
+    100012: //RootNode
+    100014: ExtEngineGlow_L
+    100016: ExtEngineGlow_R
+    100018: Windows
+    400000: Ext_AddedAO
+    400002: ExtBody
+    400004: ExtDecal_Opaque
+    400006: ExtDecal_Transp
+    400008: ExtEngineGlow
+    400010: FloorLight1
+    400012: //RootNode
+    400014: ExtEngineGlow_L
+    400016: ExtEngineGlow_R
+    400018: Windows
+    2300000: Ext_AddedAO
+    2300002: ExtBody
+    2300004: ExtDecal_Opaque
+    2300006: ExtDecal_Transp
+    2300008: ExtEngineGlow
+    2300010: FloorLight1
+    2300012: //RootNode
+    2300014: ExtEngineGlow_L
+    2300016: ExtEngineGlow_R
+    2300018: Windows
+    3300000: Ext_AddedAO
+    3300002: ExtBody
+    3300004: ExtDecal_Opaque
+    3300006: ExtDecal_Transp
+    3300008: ExtEngineGlow
+    3300010: FloorLight1
+    3300012: //RootNode
+    3300014: ExtEngineGlow_L
+    3300016: ExtEngineGlow_R
+    3300018: Windows
+    4300000: ExtBody
+    4300002: ExtDecal_Opaque
+    4300004: ExtDecal_Transp
+    4300006: ExtEngineGlow
+    4300008: FloorLight1
+    4300010: Ext_AddedAO
+    4300012: ExtEngineGlow_L
+    4300014: ExtEngineGlow_R
+    4300016: Windows
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosDecals
+    second: {fileID: 2100000, guid: f73ccb338aa9b21468b0bab95faa957a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosGlassExterior
+    second: {fileID: 2100000, guid: a856c197e50fd96469ac43aa7023a268, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosMain
+    second: {fileID: 2100000, guid: cc7258092df06464c9fd8c6d0bb7c506, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VattalusAOGradient
+    second: {fileID: 2100000, guid: d9581652bb848314d9f6ec7e407b83b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VattalusGlowGradient
+    second: {fileID: 2100000, guid: c6b32ffa6b041aa4eb84b09346203246, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

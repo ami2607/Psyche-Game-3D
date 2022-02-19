@@ -1,0 +1,160 @@
+fileFormatVersion: 2
+guid: dd5bcff19db55b44fa09f497e208a5ce
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cockpit
+    100002: CockpitScreens
+    100004: CockpitWindowInterior
+    100006: ConsoleArms
+    100008: Joystick
+    100010: PilotSeat
+    100012: //RootNode
+    100014: SeatBase
+    100016: Throttle
+    400000: Cockpit
+    400002: CockpitScreens
+    400004: CockpitWindowInterior
+    400006: ConsoleArms
+    400008: Joystick
+    400010: PilotSeat
+    400012: //RootNode
+    400014: SeatBase
+    400016: Throttle
+    2100000: PhobosGlassInterior
+    2100002: PhobosMain
+    2100004: PhobosDecals
+    2100006: PhobosCockpitScreen
+    2300000: Cockpit
+    2300002: CockpitScreens
+    2300004: CockpitWindowInterior
+    2300006: ConsoleArms
+    2300008: Joystick
+    2300010: PilotSeat
+    2300012: SeatBase
+    2300014: Throttle
+    3300000: Cockpit
+    3300002: CockpitScreens
+    3300004: CockpitWindowInterior
+    3300006: ConsoleArms
+    3300008: Joystick
+    3300010: PilotSeat
+    3300012: SeatBase
+    3300014: Throttle
+    4300000: CockpitWindowInterior
+    4300002: ConsoleArms
+    4300004: Throttle
+    4300006: Joystick
+    4300008: SeatBase
+    4300010: PilotSeat
+    4300012: CockpitScreens
+    4300014: Cockpit
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosCockpitScreen
+    second: {fileID: 2100000, guid: d7d66df620dc8d041a863bb3f82c234a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosDecals
+    second: {fileID: 2100000, guid: f73ccb338aa9b21468b0bab95faa957a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosGlassInterior
+    second: {fileID: 2100000, guid: 9ca46aadd04395949a38d412d195b5ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PhobosMain
+    second: {fileID: 2100000, guid: cc7258092df06464c9fd8c6d0bb7c506, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 0
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
