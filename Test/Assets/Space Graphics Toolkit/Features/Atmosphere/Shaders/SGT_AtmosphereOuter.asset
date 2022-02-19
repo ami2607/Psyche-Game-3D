@@ -15,7 +15,7 @@ MonoBehaviour:
   title: Hidden/SgtAtmosphereOuter
   target: {fileID: 4800000, guid: f212efc5a7708be49b940e7a254bb08a, type: 3}
   variantHash: 609668319
-  projectHash: -708665820
+  projectHash: -548763555
   variants:
   - Pipe: 0
     Code: "//<HASH>609668319</HASH>\n////////////////////////////////////////\n//
