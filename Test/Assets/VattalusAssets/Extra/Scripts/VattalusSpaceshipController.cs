@@ -34,7 +34,7 @@ public class VattalusSpaceshipController : MonoBehaviour
 
 
     [Header("Movement Variables")]
-    public bool enableMovement = false;
+    public bool enableMovement = true;
     public float maxSpeed = 200f;
     public float maxRotation = 3f;
 
@@ -125,7 +125,9 @@ public class VattalusSpaceshipController : MonoBehaviour
         //Get inputs
         if (enableMovement)
         {
-            if (Input.GetKey(accelerateInputKey)) accelerationInput = 1f; if (Input.GetKey(decelerateInputKey)) accelerationInput -= 1f;
+            
+
+            if (Input.GetKey(accelerateInputKey)) accelerationInput = 50f;if (Input.GetKey(decelerateInputKey)) accelerationInput = - 50f;
             if (Input.GetKey(strafeRightInputKey)) strafeInput = 1f; if (Input.GetKey(strafeLeftInputKey)) strafeInput -= 1f;
             if (Input.GetKey(moveUpInputKey)) upDownInput = 1f; if (Input.GetKey(moveDownInputKey)) upDownInput -= 1f;
             if (Input.GetKey(rollRightInputKey)) rollInput = 1f; if (Input.GetKey(rollLeftInputKey)) rollInput -= 1f;
@@ -138,21 +140,28 @@ public class VattalusSpaceshipController : MonoBehaviour
             {
                 ////MOVEMENT   (Actual ship movement is not implemented, as it would be outside the scope of this demo, in order to achieve the desired effect, I instead chose to rotate the whole environment around the ship to fake movement)
                 //              the code below is a very basic implementation of physics movement using forces applied to the rigidbody
-                if (enableMovement)
-                {
+                
                     //Apply move speed
-                    //if (accelerationInput > 0f) rb.AddForce(transform.forward * accelerationInput * fwdThrust * Time.deltaTime);
-                    //if (accelerationInput < 0f) rb.AddForce(transform.forward * accelerationInput * backThrust * Time.deltaTime);
-                    //if (upDownInput != 0f) rb.AddForce(transform.up * upDownInput * verticalThrust * Time.deltaTime);
-                    //if (strafeInput != 0f) rb.AddForce(transform.right * strafeInput * lateralThrust * Time.deltaTime);
+                    if (accelerationInput > 0f)
+                    { 
+                        transform.position += transform.forward * accelerationInput * Time.deltaTime;
+                        
+                    }
+                    if (accelerationInput < 0f)
+                    {
+                        rb.AddForce(transform.forward * accelerationInput * backThrust * Time.deltaTime);
+                        transform.position += (transform.forward) * accelerationInput * Time.deltaTime;
+                    }
+                    if (upDownInput != 0f) rb.AddForce(transform.up * upDownInput * verticalThrust * Time.deltaTime);
+                    if (strafeInput != 0f) rb.AddForce(transform.right * strafeInput * lateralThrust * Time.deltaTime);
 
                     ////ROTATION
-                    //rb.AddRelativeTorque(
-                    //    pitchInput * -pitchThrust * Time.deltaTime,
-                    //    yawInput * yawThrust * Time.deltaTime,
-                    //    rollInput * -rollThrust * Time.deltaTime
-                    //);
-                }
+                    rb.AddRelativeTorque(
+                       pitchInput * -pitchThrust * Time.deltaTime,
+                        yawInput * yawThrust * Time.deltaTime,
+                       rollInput * -rollThrust * Time.deltaTime
+                       );
+                
 
 
                 //Apply thruster effects
@@ -286,6 +295,8 @@ public class VattalusSpaceshipController : MonoBehaviour
     //when the player sits in the pilot seat, play the cockpit animation and close the cockpit door, inversely, open it when standing up
     public void SitInPilotSeat()
     {
+        FindObjectOfType<LevelController>().StartPlanetTravel();
+
         if (pilotSeat != null && cockpitAnimation != null)
         {
             if (cockpitAnimation.isActivated == pilotSeat.isActivated)
