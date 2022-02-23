@@ -6,6 +6,9 @@ public class PlanetBehavior : MonoBehaviour
 {
     public Transform ship;
 
+    private GameObject debrisGrid;
+    private GameObject atmosphere;
+
     bool movingToPlanet;
     float distanceScalePower;
 
@@ -25,7 +28,15 @@ public class PlanetBehavior : MonoBehaviour
         //probably a transition coroutine
     }
 
-    
+    private void Start()
+    {
+        debrisGrid = GameObject.Find("Debris Grid");
+        atmosphere = GameObject.Find("Atmosphere");
+        ship = GameObject.Find("Space Ship").GetComponent<Transform>();
+
+        debrisGrid.SetActive(false);
+        atmosphere.SetActive(false);
+    }
 
     private void Update()
     {
@@ -44,10 +55,12 @@ public class PlanetBehavior : MonoBehaviour
         }
         if (shiptToPlaneDistance < 3)
         {
+            atmosphere.SetActive(true);
             //start triggering particles and cloud effects. beeping etc
         }
         if (shiptToPlaneDistance < 6)
         {
+            debrisGrid.SetActive(true);
             //initial particles and shaking, start to make sounds
         }
     }
