@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #1a1a40;
+}
+.img-responsive {
+  margin-top: -4px;
+}
+.navbar-brand {
+    color: #fff;
+}
+
+/* card */
+.price {
+  color: white;
+  padding :5px 8px;
+  width: fit-content;
+  border-radius: 5px;
+  right:2px;
+  top: 2px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.611) 0px 3px 8px;
+}
